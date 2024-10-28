@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed Bootstrap</title>
+    <script src="https://kit.fontawesome.com/d249cc78cc.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-light bg-light py-3">
+        <div class="container-fluid">
+            <div>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+                <b class="mx-2">Instagram</b>
+            </div>
+            <div class="d-flex">
+                <div class="button-modal">
+                    <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Create new post
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <Strong>Caption:</strong>
+                                    <div class="input-group">
+                                        <textarea class="form-control my-2" aria-label="With textarea"
+                                            placeholder="Add the caption to you post here"></textarea>
+                                    </div>
+                                    <button type="button" class="btn btn-light border"><i
+                                            class="fa-solid fa-camera"></i></button>
+                                    <button type="button" class="btn btn-light border"><i
+                                            class="fa-solid fa-location-dot"></i></button>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><button class="dropdown-item" type="button">Profile</button></li>
+                        <li><button class="dropdown-item" type="button">Accsesibility</button></li>
+                        <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--CONTENT-->
+
+    <ul class="nav nav-pills my-1 d-flex justify-content-center " id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                    class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                    class="fa-solid fa-square"></i></button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 mt-3"><img class="w-100 h-100"
+                            src="https://fastly.picsum.photos/id/49/1280/792.jpg?hmac=NnUJy0O9-pXHLmY2loqVs2pJmgw9xzuixgYOk4ALCXU"></img>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-4 mt-3"><img class="w-100 h-100"
+                            src="https://fastly.picsum.photos/id/54/3264/2176.jpg?hmac=blh020fMeJ5Ru0p-fmXUaOAeYnxpOPHnhJojpzPLN3g"></img>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-4 mt-3"><img class="w-100 h-100"
+                            src="https://fastly.picsum.photos/id/77/1631/1102.jpg?hmac=sg0ArFCRjP1wlUg8vszg5RFfGiXZJkWEtqLLCRraeBw"></img>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 mt-3"><img class="w-100 h-100"
+                            src="https://fastly.picsum.photos/id/238/2560/1440.jpg?hmac=wKo4dLHwDntZmO_fdtnKtsnmRcPMACca3m5J5vx2AVc"></img>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-4 mt-3"><img class="w-100 h-100"
+                            src="https://fastly.picsum.photos/id/249/3000/2000.jpg?hmac=U2oOCXdXUwt6ftKMC4icF6eS8dGDUZJM_0-qi0JEqjk"></img>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-4 mt-3"><img class="w-100 h-100"
+                            src="https://fastly.picsum.photos/id/257/5000/3333.jpg?hmac=B0TMVZJOXC_cBK0gZj5EzCBnCwoBMEyvt9t8AbJDkdA"></img>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 mt-3"><img class="w-100 h-100"
+                            src="https://fastly.picsum.photos/id/225/1500/979.jpg?hmac=jvGoek9ng_Y0GaBbzxN0KJhHaiPtk1VfRcukK8R8FxQ"></img>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 mt-3"><img class="w-100 h-100"
+                            src="https://fastly.picsum.photos/id/292/3852/2556.jpg?hmac=cPYEh0I48Xpek2DPFLxTBhlZnKVhQCJsbprR-Awl9lo"></img>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-4 mt-3"><img class="w-100 h-100"
+                            src="https://fastly.picsum.photos/id/312/3888/2592.jpg?hmac=Lk5n0q19XuicLgvYPdAr5iML0VbkEADyqgJoHH_5nAs"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+            <div class="card m-auto my-2" style="width: 50%;">
+                <div class="card-head d-flex justify-content-between p-2">
+                    <h4 class="card-text">Just a really nice view!</h4>
+                    <p>08/26</p>
+                </div>
+                <img src="https://fastly.picsum.photos/id/49/1280/792.jpg?hmac=NnUJy0O9-pXHLmY2loqVs2pJmgw9xzuixgYOk4ALCXU"
+                    class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">
+                        <b>204 Likes</b>
+                    <p>This is an example of a very good photo that you can post on Instragram</p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card m-auto my-2" style="width: 50%;">
+                <div class="card-head d-flex justify-content-between p-2">
+                    <h4 class="card-text">The greatness of nature</h4>
+                    <p>04/09</p>
+                </div>
+                <img src="https://fastly.picsum.photos/id/54/3264/2176.jpg?hmac=blh020fMeJ5Ru0p-fmXUaOAeYnxpOPHnhJojpzPLN3g"
+                    class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">
+                        <b>2050 Likes</b>
+                    <p>This is an example of a very good photo that you can post on Instragram</p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card m-auto my-2" style="width: 50%;">
+                <div class="card-head  d-flex justify-content-between p-2">
+                    <h4 class="card-text">A great place to get inspire</h4>
+                    <p>08/10</p>
+                </div>
+                <img src="https://fastly.picsum.photos/id/77/1631/1102.jpg?hmac=sg0ArFCRjP1wlUg8vszg5RFfGiXZJkWEtqLLCRraeBw"
+                    class="card-img-top">
+                <div class="card-body">
+                    <b>1420 Likes</b>
+                    <p>This is an example of a very good photo that you can post on Instragram</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
